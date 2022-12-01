@@ -15,12 +15,25 @@ function getRandomPass(){
 
     
     for(let i=0; i<15; i++){
+        let randomInt = Math.floor(Math.random()*92);
+        pass2[i] = characters[randomInt];  
+    }
+
+    for(let i=0; i<15; i++){
         passField_1.textContent += pass1[i];
     }
 
     for(let i=0; i<15; i++){
-        passField_2.textContent += pass1[i];
+        passField_2.textContent += pass2[i];
     }
+        
+    
+
+
+    
+
+
+
 }
 
 function resetPass(){
